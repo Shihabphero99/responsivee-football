@@ -1,0 +1,217 @@
+/* -----font---- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+
+body{font-family: 'Poppins', sans-serif;
+    background: #F3F1FF;
+    font-weight: 700
+    ;} 
+
+/*--------- header--------- */
+
+a{text-decoration: none;}
+header{height: 700px;
+    width: 100%;}
+.top-head{background-color: #2D25A0;
+    color: aliceblue;  
+}
+
+.head{display: flex;
+justify-content:flex-start ;
+width: 60%;
+margin-left: 50px;
+grid-column-gap: 50px;
+color: aliceblue;
+}
+
+.under-head{width: 80%;
+    /* height: 400px; */
+  display: grid;
+  justify-content:center;
+  grid-template-columns: repeat(2,1fr);
+    /* left: 156px;  */
+  /* top: 207px;   */
+justify-content: flex-start;
+margin-left: 50px;
+margin-top: 30px;
+ font-size: 1.7rem; 
+
+}
+
+ .live{display:flex;
+ justify-content: center; 
+align-items: center;
+    background: #E02C6D;
+    width:160px;
+    font-size: .7rem;
+    height: 35px;
+    grid-column-gap: 2px;
+    border-radius: 10px;
+
+
+}
+.live:hover{border: 5px solid green;}
+
+
+.header-image{width:496px;
+height:382px;
+margin-left: 100px; 
+}
+/* 
+----------main--------- */ 
+/* ---------------------------- */
+
+.players{display: grid;
+        grid-row-gap: 30px;
+        grid-template-columns: repeat(3,1fr)}
+
+
+.player{
+                
+    border: 5px solid rgb(122, 42, 42);
+    border-radius: 10px;
+    box-shadow:5px 5px 5px rgb(124, 16, 16);
+    margin: -100px 60px 100px 40px;
+    background-color: white;
+    text-align: center;
+    font-size: .8rem;
+    width: 330px;
+    height: 600px;
+    padding: 10px;}   
+    .player:hover{background-color: rgba(95, 158, 160, 0.425);}
+         
+
+.resize{height:400px;
+    width: 100%;
+    border-radius: 20px;}  
+
+
+
+    .container{display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 60px;
+    width: 80%;
+    
+} 
+
+    .highlights{display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 80%;
+    justify-content: center;
+    margin-left: 40px;
+
+}
+
+.highlight{font-size:2rem;}
+
+/* #highh{color: #6C6C6C;} */
+
+
+.main-image{width:500px;
+  height:385px;
+  margin-left: 100px; 
+  }
+/* 
+---------footer--------- */
+
+.foot-container{color: #10437A;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 413px;
+    margin-right: 513px;
+    margin-top: 140px;
+    margin-bottom: 186px;
+    padding:5px;
+}
+
+/* .foot-container:hover{border: 5px solid blue;} */
+
+
+.footer-image{width: 200px;
+            height: 200px;
+        background-color: white;
+     }
+
+    .font-style{font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    text-shadow:5px 5px 5px rgb(124, 16, 16);}
+
+     .icons{margin-left: 50px;
+      display: grid; 
+    align-items: center;
+    grid-template-columns: repeat(4,1fr); 
+  
+
+     width: 100%;
+     
+  
+    } 
+
+    .copyright{margin-top: 100px;
+               margin-left: -300px; 
+              justify-content: center;
+               text-align: center;}
+
+
+
+               
+ @media only screen and (max-width:688px)    {                 
+
+    .head{display:grid;
+      grid-template-columns: repeat(1,1fr);
+      flex-direction: column;
+          margin-bottom: 10px;}
+
+          .players{margin-top: 700px;}
+
+          .about,.highlights,.main-image,.icons,.header-image{
+             width: 100%;
+            flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: -40px;
+        width: 100%;
+    }  
+
+  .foot-container{margin-left: 50px;
+  flex-direction: column;}
+
+    .players,.header-image,.top-head,.under-head,.foot-container,.container
+    ,.highlights{
+      grid-template-columns: repeat(1,1fr);
+    width: 100%;}
+
+        
+  
+
+
+ }
+
+@media only screen and (min-width:689px) and (max-width:1100px){
+
+    .player{width:80%;}
+
+  .players{display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+                    width: 100%;
+                    margin-top: 700px}
+                    
+          .about,.highlights,.main-image,.icons,.header-image{
+            width: 100%;
+           flex-direction: column;
+       grid-template-columns: repeat(1,1fr); 
+       margin-left: -40px;
+       width: 100%;}
+
+  .foot-container{margin-left: -1px;}
+  
+  .header-image,.top-head,.under-head,.foot-container,.container
+  ,.highlights{
+    grid-template-columns: repeat(1,1fr);
+  width: 90%;}
+  
+
+    }
